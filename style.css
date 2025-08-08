@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    body{
+        background-color: #f7f9fc;
+    }
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9 ,30 , 0.7), rgba(4,9, 30 , 0.7)), url('nursing.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+   
+}
+ nav img{
+    width: 115px;
+
+} 
+.nav-links{
+   flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 6px 7px;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: width 0.5s ease-in-out;
+}
+.nav-links ul li:hover::after{
+    width: 80%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+text-align: center;
+}
+.text-box h1{
+    font-size:50px;
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 10px; */
+}   
+.text-box p{
+    font-size: 18px;
+    margin: 10px 0 40px ;
+    font-weight: bolder;
+    color: #ddd8da;
+}
+.hero-btn{
+    display: inline-size ;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 9px;
+padding: 12px 34px;
+font-size: 16px;
+background: transparent;
+position: relative;
+cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    /* .header{
+        min-height: 50vh;
+    } */
+     body{
+        font-size: 14px;
+     }
+     .logoN{
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+     }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+
+
+
+    .text-box p{
+        font-size: 14px;
+    }
+    .hero-btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    } 
+}
+
+.course{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+
+}
+
+h1{
+   font-size: 36px ;
+   font-weight: 600 ;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.course-col{
+    flex-basis: 21%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 2px 2px 17px 5px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    /* .course-col{
+        flex-basis: 45%;
+        margin-bottom: 5%;
+    } */
+    .row{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+.campus{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+     height: 100%;
+    border-radius: 10px;
+    transition: 0.5s; 
+}
+.layer{
+    background: transparent;
+  
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+transition: 0.5s ;
+}
+.layer:hover{
+    background: rgba(85, 154, 182, 0.7);
+}
+.layer h3{
+    width: 100%;
+    color: #fff;    
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 26px;
+    /* text-align: center; */
+    font-weight: 500;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    
+}
+.facilities{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+.compact-footer {
+
+    background: #7d9cd1;
+    color: white;
+    padding: 40px 30px 30px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.phone-number {
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.legal-links {
+    margin-top: 10px;
+}
+
+.legal-links a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.legal-links a:hover {
+    color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .legal-links {
+        margin-top: 10px;
+    }
+}
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9 ,30 , 0.7)), url(nurses.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+color: #fff;
+}
+.sub-header h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.about-us{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+.about-col img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.about-col h1{
+    padding-top: 0;
+
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.red-btn:hover{
+    background: #f44336;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.semester-content {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.course-outline, .resources {
+    flex-basis: 48%;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.outline-item, .resource-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.outline-item:last-child, .resource-item:last-child {
+    border-bottom: none;
+}
+
+.outline-item h3, .resource-item h3 {
+    color: #f44336;
+    margin-bottom: 15px;
+}
+
+.outline-item ul, .resource-item ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.outline-item li, .resource-item li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.hero-btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 700px){
+    .course-outline, .resources {
+        flex-basis: 100%;
+    }
+}

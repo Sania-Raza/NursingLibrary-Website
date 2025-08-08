@@ -1,0 +1,131 @@
+/* Styles moved from inline to here for library page */
+.library-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.book-categories {
+    margin-bottom: 30px;
+}
+.category-title {
+    font-size: 24px;
+    color: #ad1b1b;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ad1b1b;
+}
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+.book-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.book-cover {
+    height: 300px;
+    overflow: hidden;
+}
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+.book-info {
+    padding: 15px;
+}
+.book-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+.book-author {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.book-desc {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+.book-links {
+    display: flex;
+    justify-content: space-between;
+}
+.view-link, .download-link {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    text-align: center;
+    flex: 1;
+    margin: 0 3px;
+    text-decoration: none;
+}
+.view-link {
+    background: #f0f0f0;
+    color: #333;
+}
+.view-link:hover {
+    background: #e0e0e0;
+}
+.download-link {
+    background: #ad1b1b;
+    color: white;
+}
+.download-link:hover {
+    background: #8c1515;
+}
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+}
+.search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+.search-bar button {
+    padding: 10px 20px;
+    background: #ad1b1b;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.admin-link {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.sub-header {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+.footer {
+    background: #222;
+    color: #eee;
+    padding: 40px;
+    text-align: center;
+}
+.footer h4 {
+    margin-bottom: 10px;
+}
+.footer .icons a {
+    margin: 0 8px;
+    color: #eee;
+    text-decoration: none;
+}
